@@ -2,7 +2,6 @@ from .models import Room
 from .types import RoomListResponse
 
 def resolve_rooms(self,info, page):
-    print(page)
     if 1 > page:
         page = 1
     page_size = 15

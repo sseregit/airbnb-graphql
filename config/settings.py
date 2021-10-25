@@ -134,3 +134,11 @@ MEDIA_URL = "/media/"
 AUTH_USER_MODEL = "users.User"
 
 DEFAULT_AUTO_FIELD= 'django.db.models.AutoField'
+
+# GraphQL
+
+GRAPHENE = {
+    'MIDDLEWARE': [
+        'config.middlewares.JWTMiddleware',
+    ]
+}
